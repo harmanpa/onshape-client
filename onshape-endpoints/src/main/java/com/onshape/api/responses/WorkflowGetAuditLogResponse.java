@@ -1,0 +1,143 @@
+// The MIT License (MIT)
+//
+// Copyright (c) 2018 - Present Onshape Inc. 
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
+package com.onshape.api.responses;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.onshape.api.Onshape;
+import com.onshape.api.types.AbstractResponseObject;
+import java.lang.Number;
+import java.lang.Override;
+import java.lang.String;
+import javax.validation.constraints.NotNull;
+
+/**
+ * Response object for getAuditLog API endpoint.
+ * &copy; 2018-Present Onshape Inc.
+ */
+public final class WorkflowGetAuditLogResponse extends AbstractResponseObject {
+  /**
+   * Workflowable object id
+   */
+  @JsonProperty("objectId")
+  @NotNull
+  String objectId;
+
+  /**
+   * Workflowable object type
+   */
+  @JsonProperty("objectType")
+  @NotNull
+  Number objectType;
+
+  /**
+   * Company that owns the object
+   */
+  @JsonProperty("companyId")
+  @NotNull
+  String companyId;
+
+  /**
+   * Published workflow used by the object
+   */
+  @JsonProperty("publishedWorkflowId")
+  @NotNull
+  WorkflowGetAuditLogResponsePublishedWorkflowId publishedWorkflowId;
+
+  /**
+   * If the workflow is in debug mode, the document microversion used for debugging
+   */
+  @JsonProperty("debugMicroversionId")
+  String debugMicroversionId;
+
+  /**
+   * Audit log entries
+   */
+  @JsonProperty("entries")
+  @NotNull
+  WorkflowGetAuditLogResponseEntries[] entries;
+
+  /**
+   * Get Workflowable object id
+   *
+   * @return Workflowable object id
+   *
+   */
+  public final String getObjectId() {
+    return this.objectId;
+  }
+
+  /**
+   * Get Workflowable object type
+   *
+   * @return Workflowable object type
+   *
+   */
+  public final Number getObjectType() {
+    return this.objectType;
+  }
+
+  /**
+   * Get Company that owns the object
+   *
+   * @return Company that owns the object
+   *
+   */
+  public final String getCompanyId() {
+    return this.companyId;
+  }
+
+  /**
+   * Get Published workflow used by the object
+   *
+   * @return Published workflow used by the object
+   *
+   */
+  public final WorkflowGetAuditLogResponsePublishedWorkflowId getPublishedWorkflowId() {
+    return this.publishedWorkflowId;
+  }
+
+  /**
+   * Get If the workflow is in debug mode, the document microversion used for debugging
+   *
+   * @return If the workflow is in debug mode, the document microversion used for debugging
+   *
+   */
+  public final String getDebugMicroversionId() {
+    return this.debugMicroversionId;
+  }
+
+  /**
+   * Get Audit log entries
+   *
+   * @return Audit log entries
+   *
+   */
+  public final WorkflowGetAuditLogResponseEntries[] getEntries() {
+    return this.entries;
+  }
+
+  @Override
+  public String toString() {
+    return Onshape.toString(this);
+  }
+}
