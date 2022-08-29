@@ -6,7 +6,7 @@ desktop applications.
 
 Copyright 2018-Present Onshape Inc.
 
-[Javadoc documentation](http://onshape-public.github.io/java-client/index.html?com/onshape/api/Onshape.html)
+[Javadoc documentation](http://harmanpa.github.io/onshape-client/onshape-endpoints-jakarta/index.html?com/onshape/api/Onshape.html)
 
 # Usage: Maven
 
@@ -25,8 +25,8 @@ and
 
 ```
 	<dependency>
-	    <groupId>com.github.onshape-public</groupId>
-	    <artifactId>java-client</artifactId>
+	    <groupId>com.github.harmanpa.onshape-client</groupId>
+	    <artifactId>onshape-endpoints-jakarta</artifactId>
 	    <version>v1.151.6039.f7f355b6b537</version>
 	</dependency>
 ```
@@ -48,7 +48,7 @@ and
 
 ```
 	dependencies {
-	        implementation 'com.github.onshape-public:java-client:v1.151.6039.f7f355b6b537'
+	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints-jakarta:v1.151.6039.f7f355b6b537'
 	}
 ```
 
