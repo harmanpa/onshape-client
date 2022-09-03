@@ -27,7 +27,7 @@ and
 	<dependency>
 	    <groupId>com.github.harmanpa.onshape-client</groupId>
 	    <artifactId>onshape-endpoints</artifactId>
-	    <version>v1.151.6039.f7f355b6b537</version>
+	    <version>v1.152.6309.06d9e62c38f0</version>
 	</dependency>
 ```
 
@@ -48,7 +48,7 @@ and
 
 ```
 	dependencies {
-	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints:v1.151.6039.f7f355b6b537'
+	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints:v1.152.6309.06d9e62c38f0'
 	}
 ```
 
