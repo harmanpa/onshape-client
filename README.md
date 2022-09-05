@@ -34,7 +34,7 @@ and
 	<dependency>
 	    <groupId>com.github.harmanpa.onshape-client</groupId>
 	    <artifactId>onshape-endpoints</artifactId>
-	    <version>v{{version}}</version>
+	    <version>v1.152.6309.06d9e62c38f0</version>
 	</dependency>
 ```
 
@@ -55,7 +55,7 @@ and
 
 ```
 	dependencies {
-	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints:v{{version}}'
+	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints:v1.152.6309.06d9e62c38f0'
 	}
 ```
 
@@ -85,7 +85,7 @@ and
 	<dependency>
 	    <groupId>com.github.harmanpa.onshape-client</groupId>
 	    <artifactId>onshape-endpoints-jakarta</artifactId>
-	    <version>v{{version}}</version>
+	    <version>v1.152.6309.06d9e62c38f0</version>
 	</dependency>
 ```
 
@@ -106,7 +106,7 @@ and
 
 ```
 	dependencies {
-	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints-jakarta:v{{version}}'
+	        implementation 'com.github.harmanpa.onshape-client:onshape-endpoints-jakarta:v1.152.6309.06d9e62c38f0'
 	}
 ```
 
